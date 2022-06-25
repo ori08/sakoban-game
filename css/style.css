@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../pics/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100vw; */
+    display: flex;
+}
+
+
+.wall {
+
+    background-image: url(../pics/Wall.png);
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.floor {
+    background-image: url(../pics/floor.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.target {
+
+    background-color: rgb(235, 232, 205);
+    background-image: url(../pics/target.png);
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+
+}
+
+.clock {
+    background-image: url(pics/clock.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.cell {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.gameBoard {
+    display: block;
+    padding-left: 100px;
+    min-height: 600px;
+    min-width: 600px;
+    padding-top: 80px;
+    display: block;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+    margin: 0 auto;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+.player {
+    width: 50px;
+    height: 50px;
+    padding-left: 5px;
+}
+
+
+.myButton {
+    margin-top: 15px;
+    box-shadow: inset 0px 1px 0px 0px #a4e271;
+    background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+    background-color: #89c403;
+    border-radius: 6px;
+    border: 1px solid #74b807;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528009;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+    background-color: #77a809;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.button-menu {
+    margin-left: 40px;
+    background-image: url(../pics/menu.png);
+    background-size: cover;
+    height: 600px;
+    margin-top: 80px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+
+
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.sokoban-logo {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+
+
+}
+
+
+
+@media (max-width: 600px) {
+    * {
+        box-sizing: unset;
+    }
+
+    body {
+        flex-direction: column;
+    }
+
+    .button-menu {
+        flex-direction: row;
+        width: 90%;
+        height: 150px;
+        margin-top: 0px;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .myButton {
+        margin-top: 2px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .text-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .sokoban-logo {
+
+        width: 100px;
+        height: 125px;
+
+
+    }
+
+
+
+    h1,
+    h2 {
+        font-size: 25px;
+        text-align: center;
+        justify-content: space-between;
+        justify-self: center;
+        align-items: center;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    img {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .target {
+        background-size: 30px;
+
+
+    }
+
+    .player {
+        width: 30px;
+        height: 30px;
+        padding-left: 2px;
+    }
+
+    .gameBoard {
+        padding-top: 60px;
+        padding-left: 0px;
+        min-height: 400px;
+        min-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cell {
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="init()" onkeyup="moveSacoban(event)">
+
+    <div class="button-menu">
+        <img class="sokoban-logo" src="pics/sokobon.png" alt="">
+        <div class="button-group">
+            <button class="myButton" onclick="init()">reset</button>
+            <button class="myButton" onclick="undo()">undo</button>
+            <button class="myButton" onclick="createManuelBoard()">Manulelly board</button>
+        </div>
+        <div class="text-group">
+            <h1 class="stepScore">steps: 100</h1>
+            <h1 class="score">score: 0</h1>
+        </div>
+    </div>
+
+
+
+    <table>
+        <tbody class="gameBoard"></tbody>
+    </table>
+
+    <script src="javascript/game-board.js"></script>
+    <script src="javascript/sacoban-service.js"></script>
+    <script src="javascript/sabocan-controler.js"></script>
+    <script src="javascript/storage.js"></script>
+
+</body>
+
+</html>
